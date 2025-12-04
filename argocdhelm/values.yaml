@@ -1,0 +1,3 @@
+image:
+  repository: leaddevops/kubeserve
+  tag: 20
