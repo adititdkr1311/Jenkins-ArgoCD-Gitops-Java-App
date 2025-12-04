@@ -1,5 +1,16 @@
 Gitops using argoCD and CICD 
 
+-- Deploy JAVA application to K8s using gitops 
+   
+   CI = githubActions 
+   CD = argoCD 
+
+-- Flow
+   source code -> change -> commit -> push -> Trigger github action ->
+      checkout + build code + create new image + push new image to dockerhub + update new image name in deployment yaml 
+       -> Trigger argoCD -> Deploy new image to K8s cluster 
+
+	
 -- K8s cluster setup  
 		 - Create K8s cluster 
 		 - Create new namespace for argoCD tool 
